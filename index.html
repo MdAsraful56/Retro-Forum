@@ -34,7 +34,7 @@
                     <div class="svgNavLogo h-14 px-4 py-3 items-center inline-flex" title="Write">
                         <img class="" src="images/Frame1.svg" alt="">
                     </div>
-                    <div class="svgNavLogo h-14 px-4 py-3 items-center inline-flex" title="Add Friend">
+                    <div class="svgNavLogo h-14 px-4 py-3 items-center inline-flex" title="Add">
                         <img class="" src="images/Frame2.svg" alt="">
                     </div>
                     <div class="svgNavLogo h-14 px-4 py-3 items-center inline-flex" title="Save Post">
@@ -50,7 +50,7 @@
             <div class="bg-gray-800 h-[445px] rounded-lg shadow-lg relative p-8">
                 <!-- Waves Background -->
                 <!-- <img class="absolute z-2" src="images/bgbanner.png" alt=""> -->
-                <div class="absolute inset-0 pt-32">
+                <div class="absolute inset-0 pt-32 hidden md:block lg:block">
                     <img src="images/bgbanner.png" alt="">
                 </div>
                 
@@ -76,7 +76,7 @@
                 </div>
         
                 <!-- Right Section -->
-                <div class="bg-white p-6 rounded-lg mt-8 md:mt-0 md:ml-6 shadow-lg">
+                <div class="bg-white p-6 rounded-lg mt-8 md:mt-0 md:ml-6 shadow-lg hidden md:block lg:block">
                     <ul class="text-left text-black space-y-2 ">
                         <li class="flex justify-between gap-5">
                             <span>Registered Users</span>
@@ -103,8 +103,6 @@
 
     <main class="container lg:px-24 px-5 pt-5 pb-12">
 
-        
-
         <section class="">
             <!-- Let’s Discuss -->
             <div class="space-y-4 text-center pb-12">
@@ -112,18 +110,65 @@
                 <p class="text-sm text-[#12132D99]">Yes, you can run unit tests and view the results directly within the app. <br> The integrated testing features allow for a streamlined .</p>
             </div>
             <!-- JavaScript Discuss Design -->
-            
+            <section class="flex lg:flex-row md:flex-row flex-col gap-5">
+                <!-- post card  -->
+                <div id="postCardDiv" class="lg:w-[70%] w-[100%] space-y-10">
+                    
+                </div>
+                <!-- make a read -->
+                <div id="readSection" class="lg:w-[30%] w-[100%] bg-[#12132D0D] p-3 space-y-4 rounded-xl">
+                    <div class="flex flex-row justify-between">
+                        <h3 class="text-lg font-semibold">Title</h3>
+                        <div class="flex flex-row">
+                            <img src="images/Frame4.svg" alt="">
+                            <p class="text-sm">Mark read</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </section>
 
 
         <section class="">
+            <!-- Join section  -->
+            <section class="max-w-screen-lg mx-auto py-12 px-4">
+                <div class="bg-gray-800 rounded-lg shadow-lg relative p-8">
+                    <!-- Waves Background -->
+                    <div class="absolute inset-0 -z-10">
+                    
+                    </div>
+                    
+                    <!-- Content -->
+                    <div class="flex flex-col md:flex-row justify-between items-center">
+                    <!-- Left Section -->
+                    <div>
+                        <h1 class="text-5xl font-bold mb-2 text-white">Join Our Forum</h1>
+                        <p class="text-gray-300 mb-6">
+                            Share your favorite opinion and win and wp forum coffee mug! Yes, you can run unit tests and view the results directly within the app. 
+                        </p>
+                        <button class="btn rounded-3xl border-none bg-[#797DFC] text-white ">Registered Now</button>
+                        <!-- <div class="relative w-full max-w-md">
+                        <button class="absolute right-2 top-1/2 transform -translate-y-1/2 px-4 py-1 rounded-full bg-blue-500 text-white hover:bg-blue-600">
+                            Search
+                        </button>
+                        </div> -->
+                    </div>
+            
+                    <!-- Right Section -->
+                    <div class="p-6 rounded-lg mt-8 md:mt-0 md:ml-6 ">
+                        <img src="images/joinforum.png" alt="">
+                    </div>
+                    </div>
+                </div>
+                </section>
+
             <!-- Latest Posts -->
             <div class="space-y-4 text-center pb-12">
                 <h2 class="text-3xl font-bold">Latest Posts</h2>
                 <p class="text-sm text-[#12132D99]">Yes, you can run unit tests and view the results directly within the app. <br> The integrated testing features allow for a streamlined .</p>
             </div>
             <!-- JavaScript latest Design -->
-            <div id="latestDiv" class=" flex flex-row gap-8">
+            <div id="latestDiv" class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-28 gap-8">
                 
             </div>
         </section>
@@ -154,7 +199,7 @@
 
 
     <!-- script links  -->
-    <script src="latest.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
